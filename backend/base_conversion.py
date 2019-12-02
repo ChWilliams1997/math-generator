@@ -35,8 +35,8 @@ class Conversion():
     def decimalToOctal(self, dec_num: str) -> str:
         return ''
 
-    def anyToDecimal(self, num: str) -> str:
+    def anyToDecimal(self, num: str, base: int) -> str:
         return ''
 
-    def decimalToAny(self, dec_num: str) -> str:
+    def decimalToAny(self, dec_num: str, base: int) -> str:
         return ''

@@ -25,7 +25,7 @@ class TestZeroVariableEquations(unittest.TestCase):
       assert (int(x) >= 10) and (int(x) <= 500)
       assert (int(y) >= 10) and (int(y) <= 500)
 
-  def test_addition_ranges_standard(self):
+  def test_addition_ranges_advanced(self):
     for i in range(10):
       z = 0
       expression = self.addition.advanced()
@@ -56,7 +56,7 @@ class TestZeroVariableEquations(unittest.TestCase):
       assert (int(x) >= 10) and (int(x) <= 500)
       assert (int(y) >= 10) and (int(y) <= 500)
 
-  def test_subtraction_ranges_standard(self):
+  def test_subtraction_ranges_advanced(self):
     for i in range(10):
       z = 0
       expression = self.subtraction.advanced()
@@ -112,7 +112,7 @@ class TestZeroVariableEquations(unittest.TestCase):
       assert (int(x) >= 0) and (int(x) <= 22500)
       assert (int(y) >= 0) and (int(y) <= 22500)
 
-  def test_division_ranges_standard(self):
+  def test_division_ranges_advanced(self):
     for i in range(10):
       x, y = self.division.standard().split('/')
       assert (int(x) >= 0) and (int(x) <= 250000)
@@ -128,12 +128,12 @@ class TestZeroVariableEquations(unittest.TestCase):
       x, y = self.division.beginner().split('/')
       assert (x % y == 0) or (y % x == 0)
 
-  def test_division_numbers_result_in_remainder_zero_beginner(self):
+  def test_division_numbers_result_in_remainder_zero_standard(self):
     for i in range(10):
       x, y = self.division.standard().split('/')
       assert (x % y == 0) or (y % x == 0)
 
-  def test_division_numbers_result_in_remainder_zero_beginner(self):
+  def test_division_numbers_result_in_remainder_zero_advanced(self):
     for i in range(10):
       x, y = self.division.advanced().split('/')
       assert (x % y == 0) or (y % x == 0)
