@@ -119,9 +119,11 @@ class TestZeroVariableEquations(unittest.TestCase):
       assert (int(y) >= 0) and (int(y) <= 250000)
 
   def test_division_solve(self):
-    assert self.division.solve('2/2') == 1
-    assert self.division.solve('-2/2') == -1
+    assert self.division.solve('10/2') == 5
+    assert self.division.solve('-4/2') == -2
     assert self.division.solve('2/-2') == -1
+    assert self.division.solve('0/1') == 0
+    assert self.division.solve('0/-5') == 0
 
   def test_division_numbers_result_in_remainder_zero_beginner(self):
     for i in range(10):
