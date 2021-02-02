@@ -11,7 +11,9 @@ class Multiplication(Equation):
         str -
           The beginner level multiplication expression
     """
-    return ''
+    nums = self.generateIntegers(2, [(0, 10)])
+    x, y = nums[0], nums[1]
+    return f'{x} * {y}'
 
   def standard(self) -> str:
     """ Generates a standard level multiplication problem
@@ -21,7 +23,9 @@ class Multiplication(Equation):
         str -
           The standard level multiplication expression
     """
-    return ''
+    nums = self.generateIntegers(2, [(0, 150)])
+    x, y = nums[0], nums[1]
+    return f'{x} * {y}'
 
   def advanced(self) -> str:
     """ Generates an advanced level multiplication problem
@@ -31,4 +35,6 @@ class Multiplication(Equation):
         str -
           The advanced level multiplication expression
     """
-    return ''
+    nums = self.generateIntegers(2, [(0, 500)])
+    x, y = nums[0], nums[1]
+    return f'{x} * {y}'
